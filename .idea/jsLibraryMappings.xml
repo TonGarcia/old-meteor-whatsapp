@@ -3,5 +3,6 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{whatsapp node_modules}" />
     <includedPredefinedLibrary name="Meteor project library" />
+    <includedPredefinedLibrary name="Node.js Globals" />
   </component>
 </project>
