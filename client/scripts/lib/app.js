@@ -2,6 +2,7 @@
 import angular from 'angular';
 import 'angular-animate';
 import 'angular-meteor';
+import 'angular-moment';
 import 'angular-sanitize';
 import 'angular-ui-router';
 import 'ionic-scripts';
@@ -10,12 +11,14 @@ import 'ionic-scripts';
 import Definer from '../definer';
 import ChatsCtrl from '../controllers/chats.controller';
 import ChatCtrl from '../controllers/chat.controller';
+import InputDirective from '../directives/input.directive';
 import CalendarFilter from '../filters/calendar.filter';
 import RoutesConfig from '../routes';
 
 // App
 const App = angular.module('Whatsapp', [
     'angular-meteor',
+    'angularMoment',
     'ionic'
 ]);
 
@@ -23,6 +26,7 @@ const App = angular.module('Whatsapp', [
 new Definer(App)
     .define(ChatsCtrl)
     .define(ChatCtrl)
+    .define(InputDirective)
     .define(CalendarFilter)
     .define(RoutesConfig);
 
